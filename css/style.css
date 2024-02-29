@@ -1,0 +1,204 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #010101;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #363333;
+  color: white;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 60px;
+}
+
+nav {
+  background-color: #444;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.container {
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(8, 8, 8);
+  border-radius: 8px;
+}
+
+.welcome-message {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.banner {
+  margin-top: -135px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.frame-hq {
+  display: none;
+  padding: 20px;
+  border-radius: 4px;
+  border: 3px solid #fff;
+  height: 210px;
+  width: 1255px;
+  margin-right: 800px;
+  margin-top: -5px;
+  color: #fff;
+  position: absolute;
+}
+.headquarter {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+p {
+  line-height: 1.5;
+}
+img:hover {
+  transform: scale(1.4);
+}
+
+.city-name {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+label {
+  display: flex;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  width: 50%;
+  box-sizing: border-box;
+  background-color: #636a63;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(196, 148, 4);
+}
+
+.output-container {
+  margin-top: 20px;
+}
+.Out {
+  margin-left: 800px;
+  margin-top: -400px;
+}
+.output-box {
+  padding: 20px;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  height: 220px;
+  width: 232px;
+  margin-left: 800px;
+  color: #fff;
+  position: absolute;
+}
+
+/*Profile Kami*/
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.5s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+p {
+  line-height: 1.5;
+}

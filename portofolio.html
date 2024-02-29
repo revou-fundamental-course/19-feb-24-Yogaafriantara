@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+
+      section {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+
+      p {
+        line-height: 1.1;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Our Profile</a>
+      </nav>
+
+      <h1>Portofolio Coffee Shop</h1>
+    </header>
+
+    <section class="container">
+      <img src="Assets/portofolio.jpg" alt="Coffee Shop" id="coffeeImage" />
+      <p>
+        <br /><span>Coffe Store Story</span><br />
+        Kisah kami dimulai pada tahun 1971. Saat itu kami adalah seorang
+        pemanggang dan pengecer biji kopi utuh dan kopi bubuk, teh, dan
+        rempah-rempah dengan satu toko di Pike Place Market di Seattle. Saat
+        ini, kami mendapat kehormatan untuk terhubung dengan jutaan pelanggan
+        setiap hari di 76 pasar..
+
+        <br /><span>Folklore</span> <br />
+        Nama Coffee Store diambil dari nama teman pertama dalam “Moby Dick”
+        karya Herman Melville. Logo kami juga terinspirasi oleh laut menampilkan
+        sirene berekor kembar dari mitologi Yunani..
+        <br /><span>Toko Kami</span> <br />
+        Toko kami adalah tempat berkumpulnya lingkungan untuk bertemu teman dan
+        keluarga. Pelanggan kami menikmati layanan berkualitas, suasana yang
+        mengundang, dan minuman yang luar biasa di lebih dari 28.000 toko dan
+        dua lokasi Starbucks Reserve™ Roastery yang menawan.
+      </p>
+    </section>
+
+    <script>
+      // JavaScript for image animation (optional)
+      const coffeeImage = document.getElementById("coffeeImage");
+
+      coffeeImage.addEventListener("mouseover", () => {
+        coffeeImage.style.transform = "scale(1.1)";
+      });
+
+      coffeeImage.addEventListener("mouseout", () => {
+        coffeeImage.style.transform = "scale(1)";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Latihan RevoU</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header> 
+      <img src="Assets/Logo_coffe.png" alt="Logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Our Profile</a>
+        <a href="portofolio.html">Portofolio</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="welcome-message">
+        <h1>Hi, <span id="nama"></span> Welcome To <span id="wrn">Website</span></h1>
+        <p>Ini adalah website latihan pertama.</p>
+      </div>
+
+      <div class="banner" id="banner" style="background-image: url(Assets/benner.jpg);"/>
+        <div class="slide active"></div>
+        <!-- Add more slides as needed -->
+      </div>
+
+      <div class="headquarter">
+        <table class="frame-hq"></table>
+        <h2>Our Headquarter</h2>
+
+        <div class="circle-container">
+          <div class="circle">
+            <img src="Assets/jakarta.jpg" alt="City 1" />
+          </div>
+          <div class="circle">
+            <img src="Assets/Lokasi-Wisata-Sejarah-Bandung.jpg" alt="City 2" />
+          </div>
+          <div class="circle">
+            <img src="Assets/surabaya.jpg" alt="City 3" />
+          </div>
+        </div>
+
+        <div class="city-name">
+          <p>Jakarta</p>
+          <p>Bandung</p>
+          <p>Surabaya</p>
+        </div>
+      </div>
+      <form id="myForm" onsubmit="return validateForm()">
+          <label>Nama <span id="nama"></span></label>
+          <input required="text" id="nama" placeholder="Masukkan nama" name="nama"/>
+
+          <label for="tglLahir">Tanggal Lahir:</label>
+          <input type="date" id="tglLahir" name="tglLahir"/>
+
+          <label>Jenis Kelamin:</label>
+          <label for="laki">Laki-laki</label>
+          <input type="radio" id="laki" name="jenisKelamin" />
+
+          <label for="perempuan">Perempuan</label>
+          <input type="radio" id="perempuan" name="jenisKelamin" />
+
+          <label for="pesan">Pesan:</label>
+          <textarea id="pesan" placeholder="Masukkan pesan"></textarea>
+
+          <button onclick="tampilkanPesan()">Submit</button>
+
+          <div class="output-container">
+            <h3 class="Out">Output:</h3>
+            <div id="output" class="output-box"></div>
+      </div>
+    </div>
+    </form>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
